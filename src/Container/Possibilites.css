@@ -1,0 +1,54 @@
+.possibilities{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    padding: 5%;
+}
+.possibilities_image{
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 2rem;
+}
+
+.possibilities_image img{
+    width: 100%;
+    height: 100%;
+}
+.possibilities_content{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.possibilities_content h4{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+}
+
+.possibilities_content h4:last-child{
+    color: #ff8A71;
+}
+
+.possibilities_content p{
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:650px) {
+.possibilities_image img{
+    height: 50%;
+    width: 100%;
+}
+}

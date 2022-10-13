@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Brand from './Components/Brand';
+import Explore from './Components/Explore';
+import Navbar from './Components/Navbar';
+import About from './Container/About';
+import Blog from './Container/Blog';
+import Features from './Container/Features';
+import Footer from './Container/Footer';
+import Header from './Container/Header';
+import Possibilities from './Container/Possibilities';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='gradient__bg'>
+      <Navbar/>
+      <Header/>
+      </div>
+      <Brand/>
+      <About/>
+      <Features/>
+      <Possibilities/>
+      <Explore/>
+      <Blog/>
+      <Footer/>
     </div>
   );
 }
